@@ -1,4 +1,4 @@
-# Humanoid_Vision_Engine
+# Humanoid-Vision-Engine
 
 [ECCV 2022] Contributions of Shape, Texture, and Color in Visual Recognition
 
