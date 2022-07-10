@@ -3,7 +3,7 @@
 [ECCV 2022] Contributions of Shape, Texture, and Color in Visual Recognition
 
 <div align="center">
-    <img src="./docs/Fig-1.png" alt="Editor" width="500">
+    <img src="./docs/Fig-1.png" alt="Editor" width="1000">
 </div>
 
 **Figure:** *Left: Contributions of Shape, Texture, and Color may be different among different scenarios/tasks. 
@@ -12,7 +12,7 @@ the given recognition task in a pure learning manner (E.g., In ImageNet classifi
 shape is the most discriminative feature and contributes most in visual recognition).*
 
 <div align="center">
-    <img src="./docs/Fig-2.png" alt="Editor" width="500">
+    <img src="./docs/Fig-2.png" alt="Editor" width="1000">
 </div>
 
 **Figure:** *Pipeline for humanoid vision engine (HVE). (a) shows how will humans’ vision
