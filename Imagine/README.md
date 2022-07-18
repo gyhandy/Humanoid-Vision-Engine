@@ -2,7 +2,7 @@
 
 ### 1. To Train the model
 
-- run `cd Imagine`
+- In terminal, run `cd Imagine`
 
 - Edit `script.sh`. Set the path of dataset and output file.
 
