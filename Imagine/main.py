@@ -46,21 +46,11 @@ if __name__ == '__main__':
     parser.add_argument('--cuda', type=str, default='-1', help='If -1, use cpu; if >0 use single GPU; if 2,3,4 for multi GPUS(2,3,4)')
     parser.add_argument('--mode', type=str, default='predict')
     parser.add_argument('--data', type=str, default='texture') # 'all', testure, shape, color
-    # parser.add_argument('--output_path', type=str, default='out/deeper_deeper_res_new_texture_unpaired/subset')
-    # parser.add_argument('--output_path', type=str, default='out/deeper_deeper_res_new_texture/shape')
-    # parser.add_argument('--output_path', type=str, default='out/deeper_deeper_res_new_texture/color')
-    parser.add_argument('--output_path', type=str, default='out/deeper_deeper_res_new_texture/texture_new') # used
-    # parser.add_argument('--output_path', type=str, default='out/deeper_deeper_res_new_texture/texture') 
-    # parser.add_argument('--output_path', type=str, default='out/deeper_deeper/all')
+    
+    parser.add_argument('--output_path', type=str, default='out/deeper_deeper_res_new_texture/texture_new', help="folder to save output model checkpoint and images results")
 
     # Dataset Configuration
-    # parser.add_argument('--dataset_path', type=str, default='/lab/tmpig8d/u/xingrui/GAN_data')
-    # parser.add_argument('--dataset_path', type=str, default='/lab/tmpig8d/u/xingrui/GAN_texture_data')
-    # res depth 9, adain
-    # parser.add_argument('--dataset_path', type=str, default='/lab/tmpig8d/u/yao_data/human_simulation_engine/')
-    # parser.add_argument('--dataset_path', type=str, default='/lab/tmpig8d/u/yao_data/human_simulation_engine/V3_shape_dataset')
-    # parser.add_argument('--dataset_path', type=str, default='/lab/tmpig8d/u/yao_data/human_simulation_engine/V3_color_dataset')
-    parser.add_argument('--dataset_path', type=str, default='/lab/tmpig8d/u/yao_data/human_simulation_engine/V3_texture_dataset')
+    parser.add_argument('--dataset_path', type=str, help="Path of input data", default='/lab/tmpig8d/u/yao_data/human_simulation_engine/V3_texture_dataset')
     parser.add_argument('--image_size', type=int, default=256)
     parser.add_argument('--batch_size', type=int, default=4)
     parser.add_argument('--G_iter', type=int, default=5)
@@ -75,7 +65,7 @@ if __name__ == '__main__':
 
     # Test Configuration
     parser.add_argument('--test_epoch', type=int, default=259)
-    parser.add_argument('--mismatch', type=bool, default=True)
+    parser.add_argument('--mismatch', type=bool, default=True, help="Only use in testing. If ture, the input features for generation will be not from same object.")
     parser.add_argument('--test_image', type=str, default='', help='if is an image, only translate it; if a folder, translate all images in it')
 
     # main function
