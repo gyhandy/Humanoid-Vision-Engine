@@ -135,11 +135,17 @@ python main.py --cuda 0,1 \
     - Example
     
 ```bash
-python main.py --cuda 0 --batch_size 8 --test_epoch 269  --resume_epoch 269
+FEATURE=texture # choose from texture, color, shape
+
+python main.py --cuda 0 \
+               --batch_size 16 \
+               --dataset_path /lab/tmpig8d/u/yao_data/human_simulation_engine/V3_${FEATURE}_dataset \
+               --output_path out/deeper/${FEATURE} \
+               --test_epoch 269 \
+
 ```
 
 - run `sh test.sh`
-
 
 
 ### 2. Calculate the FID
