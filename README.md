@@ -102,11 +102,13 @@ python preprocess_dataset/3_compute_feature_images/preprocess_color/FourierScram
 
 9. After get all the feature images, you can go to part 2 and analyze the dataset bias with humanoid neural network.
 
+---
+
 ### Imagination of HVE
 
 Experiment of Section "5.2 Cross Feature Imagination with HVE"
 
-### 1. To Train the model
+### 1. Train the Model
 
 - In terminal, run `cd Imagine`
 
@@ -125,5 +127,20 @@ python main.py --cuda 0,1 \
 ```      
 - run `sh script.sh`
 
+### 2. Run Generation
 
+- Edit `test.sh`. 
+    - Set the path of dataset and output file.
+    - Set the test checkpoint file
+    - Example
+    
+```bash
+python main.py --cuda 0 --batch_size 8 --test_epoch 269  --resume_epoch 269
+```
+
+- run `sh test.sh`
+
+
+
+### 2. Calculate the FID
 
