@@ -36,6 +36,7 @@ cd Humanoid-Vision-Engine
 
 ### Datasets
 - Please download the preprocessed dataset from [here](http://ilab.usc.edu/andy/dataset/hve.zip), and then unzip it place in `.data`.
+  (Note: if not download automatically, please right click, copy the link and open in a new tab.)
 
 ### Analyze Dasaset Bias
 1. Please train the feature models with
