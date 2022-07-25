@@ -2,6 +2,8 @@
 
 [ECCV 2022] Contributions of Shape, Texture, and Color in Visual Recognition
 
+Code is actively updating.
+
 <div align="center">
     <img src="./docs/Fig-1.png" alt="Editor" width="1000">
 </div>
@@ -33,7 +35,7 @@ cd Humanoid-Vision-Engine
 ```
 
 ### Datasets
-- Please download the preprocessed dataset from [here](), and then unzip it place in `.data`.
+- Please download the preprocessed dataset from [here](http://ilab.usc.edu/andy/dataset/hve.zip), and then unzip it place in `.data`.
 
 ### Analyze Dasaset Bias
 1. Please train the feature models with
