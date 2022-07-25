@@ -106,7 +106,7 @@ python preprocess_dataset/3_compute_feature_images/preprocess_color/FourierScram
 
 ### Imagination of HVE
 
-Experiment of Section "5.2 Cross Feature Imagination with HVE"
+Experiment of Section 5.2 "Cross Feature Imagination with HVE"
 
 ### 1. Train the Model
 
