@@ -101,3 +101,10 @@ python preprocess_dataset/3_compute_feature_images/preprocess_color/FourierScram
 8. Use matlab to implement FourierScrambled. Matlab code path `preprocess_dataset/3_compute_feature_images/preprocess_color/FourierScrambled/main.m`.
 
 9. After get all the feature images, you can go to part 2 and analyze the dataset bias with humanoid neural network.
+
+### Imagination of HVE
+
+Experiment of Section "5.2 Cross Feature Imagination with HVE"
+
+
+
