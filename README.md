@@ -133,7 +133,7 @@ python main.py --cuda 0, 1 \
 - Edit `test.sh`. 
     - Set the path of dataset and output file.
     - Set the test checkpoint file
-    - If want to use the mismatch shape, texture, color as input, set `--mismatch`
+    - If want to use the mismatched shape, texture, color as input, set `--mismatch`
     - Example
     
 ```bash
