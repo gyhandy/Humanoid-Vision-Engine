@@ -161,7 +161,7 @@ pip install pytorch-fid
 
 - Resize the groughtruth image
 
-For example:
+For example (you need to change the path):
 
 ```bash
 #!/usr/bin/env bash
@@ -178,6 +178,7 @@ python create_dataset.py --ori_path ${dataset_path} --path ${process_path}
 
 - Run Fid code:
 
+For example (you need to change the path):
 
 ```bash
 #!/usr/bin/env bash
