@@ -153,12 +153,17 @@ python main.py --cuda 0 \
 
 ### 3. Calculate the FID
 
-- Install 
+- Install [pytorch-fid](https://github.com/mseitzer/pytorch-fid)
+
+```bash
+pip install pytorch-fid
+```
 
 - Resize the groughtruth image
 
 For example:
-```
+
+```bash
 #!/usr/bin/env bash
 FEATURE=texture # choose from texture, color, shape
 
@@ -174,7 +179,7 @@ python create_dataset.py --ori_path ${dataset_path} --path ${process_path}
 - Run Fid code:
 
 
-```
+```bash
 #!/usr/bin/env bash
 FEATURE=texture # choose from texture, color, shape
 
