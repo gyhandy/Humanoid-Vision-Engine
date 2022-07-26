@@ -135,9 +135,10 @@ class Solver:
                                 fake_images, 
                                 fixed_target_images], dim=0)
                 
+                # save_image((all.cpu()+1.0)/2.0,
+                        #    os.path.join(self.save_images_path, 'images_{}.jpg'.format(epoch)), 16)
                 save_image((all.cpu()+1.0)/2.0,
-                           os.path.join(self.save_images_path, 'images_{}.jpg'.format(epoch)), 16)
-
+                           os.path.join(self.save_images_path, 'images_{}.jpg'.format(epoch)))
             # Train
             self.generator = self.generator.train()
             
@@ -231,9 +232,10 @@ class Solver:
                     fake_images, 
                     target_images], dim=0)
                 
+                # save_image((all.cpu()+1.0)/2.0,
+                        #    os.path.join(self.save_images_path_test, 'images_{}.jpg'.format(iteration)), self.config.batch_size)
                 save_image((all.cpu()+1.0)/2.0,
-                           os.path.join(self.save_images_path_test, 'images_{}.jpg'.format(iteration)), self.config.batch_size)
-
+                           os.path.join(self.save_images_path_test, 'images_{}.jpg'.format(iteration)))
     def predict(self):
             with torch.no_grad():
                 self.generator = self.generator.eval()
