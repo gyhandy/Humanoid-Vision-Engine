@@ -176,7 +176,7 @@ process_path=out/deeper_deeper_res_new_texture/${FEATURE}/gt
 python create_dataset.py --ori_path ${dataset_path} --path ${process_path}
 ```
 
-- Run Fid code:
+- Run FID code:
 
 For example (you need to change the path):
 
