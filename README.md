@@ -68,10 +68,10 @@ python preprocess_dataset/1_train_resnet/main.py --data YOUR_DATA_ROOT --arch PA
 
 2.  Entity segmentation
 ```bash
-placeholder
+please follow this repo https://github.com/dvlab-research/Entity/tree/main/Entity
 ```
 
-3. Identify foreground. Please have a look into the code and change the arguments to your customized data.
+1. Identify foreground. Please have a look into the code and change the arguments to your customized data.
 ```bash
 python preprocess_dataset/2_find_foreground_with_gradcam/select_mask.py
 ```
@@ -193,3 +193,20 @@ output_path=out/deeper_deeper_res_new_texture/${FEATURE}/result_mismatch
 python -m pytorch_fid ${process_path} ${output_path} --device cuda:1 --batch-size 128
 ```
 
+---
+### Zero shot Segmentation
+
+### 1. Generate distance file
+please generate distance file with
+```bash
+python Zero_shot/cross_modality_two_latents.py
+```
+
+### 2. Download vector
+please download vector from [conceptnet](https://conceptnet.io/)
+
+### 3. Zero shot Learning
+please run zero shot learning with
+```bash
+python Zero_shot/zero_shot.py
+```
