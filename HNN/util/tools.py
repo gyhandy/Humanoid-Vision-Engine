@@ -55,7 +55,7 @@ def load_resnet50(path):
     except:
         new_state_dict = model.state_dict()
         for k,v in checkpoint['state_dict'].items():
-        	new_state_dict[k[7:]] = v
+            new_state_dict[k[7:]] = v
 
         model.load_state_dict(new_state_dict)
     return model.cuda()
